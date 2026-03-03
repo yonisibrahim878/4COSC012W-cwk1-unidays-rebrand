@@ -109,3 +109,71 @@ a:hover { text-decoration: underline; }
   color: #e9ecff;
   margin-bottom: 10px;
 }
+
+.section {
+  padding: 26px 18px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-dark {
+  background: rgba(255,255,255,0.03);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 14px;
+}
+
+.card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.deal-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 14px;
+}
+
+.deal {
+  background: rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.deal-type {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 800;
+  opacity: 0.8;
+}
+
+.steps { margin-top: 12px; line-height: 1.9; }
+
+.footer {
+  padding: 18px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  opacity: 0.8;
+}
+
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .deal-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 520px) {
+  .nav { display: none; }
+  .grid, .deal-grid { grid-template-columns: 1fr; }
+  .hero h2 { font-size: 28px; }
+}
