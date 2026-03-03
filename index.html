@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNiDAYS Next - Homepage</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header class="topbar">
+  <h1 class="logo">UNiDAYS <span class="small">Next</span></h1>
+
+  <nav class="nav">
+    <a href="#categories">Categories</a>
+    <a href="#deals">Deals</a>
+    <a href="#verify">Verify</a>
+  </nav>
+
+  <div class="top-actions">
+    <button class="btn btn-ghost" type="button">Log in</button>
+    <button class="btn btn-main" type="button">Sign up</button>
+  </div>
+</header>
+<section class="banner">
+  <canvas id="introCanvas"></canvas>
+
+  <div class="banner-content">
+    <p class="tag">Student discounts • rebrand concept</p>
+    <h2>Find student deals quicker.</h2>
+    <p class="sub">
+      This is a redesign idea for UNiDAYS with a cleaner layout and small interactive elements.
+    </p>
+
+    <div class="banner-buttons">
+      <button class="btn btn-main" type="button">Explore deals</button>
+      <button class="btn btn-ghost" type="button">How it works</button>
+    </div>
+
+    <div class="search-box">
+      <label for="searchInput">Search deals (simple filter):</label>
+      <input id="searchInput" type="text" placeholder="Try: Nike, Apple, Food..." />
+      <button id="clearBtn" class="btn btn-ghost" type="button">Clear</button>
+      <p id="resultsMsg" class="hint"></p>
+    </div>
+  </div>
+</section>
+<main>
+  <section id="categories" class="section">
+    <h3>Categories</h3>
+    <p class="hint">Simple grid cards (easy to explain in report).</p>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Fashion</h4>
+        <p>Clothes, shoes, accessories</p>
+      </div>
+
+      <div class="card">
+        <h4>Tech</h4>
+        <p>Laptops, phones, software</p>
+      </div>
+
+      <div class="card">
+        <h4>Food</h4>
+        <p>Takeaway, groceries, cafés</p>
+      </div>
+
+      <div class="card">
+        <h4>Entertainment</h4>
+        <p>Streaming, cinema, events</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="deals" class="section section-dark">
+    <h3>Featured deals</h3>
+    <p class="hint">These cards are filtered by the search box above.</p>
+
+    <div id="dealGrid" class="deal-grid">
+      <div class="deal" data-title="Nike 10% off trainers">
+        <p class="deal-type">Fashion</p>
+        <h4>Nike</h4>
+        <p>10% off selected trainers</p>
+        <button class="btn btn-main small" type="button">View</button>
+      </div>
+
+      <div class="deal" data-title="Apple student pricing on mac">
+        <p class="deal-type">Tech</p>
+        <h4>Apple</h4>
+        <p>Student pricing on Mac/iPad</p>
+        <button class="btn btn-main small" type="button">View</button>
+      </div>
+
+      <div class="deal" data-title="Deliveroo 5 pounds off">
+        <p class="deal-type">Food</p>
+        <h4>Deliveroo</h4>
+        <p>£5 off your next order</p>
+        <button class="btn btn-main small" type="button">View</button>
+      </div>
+
+      <div class="deal" data-title="ASOS 15% student discount">
+        <p class="deal-type">Fashion</p>
+        <h4>ASOS</h4>
+        <p>15% student discount</p>
+        <button class="btn btn-main small" type="button">View</button>
+      </div>
+
+      <div class="deal" data-title="Adobe 60% off creative cloud">
+        <p class="deal-type">Tech</p>
+        <h4>Adobe</h4>
+        <p>60% off Creative Cloud plan</p>
+        <button class="btn btn-main small" type="button">View</button>
+      </div>
+
+      <div class="deal" data-title="Subway 20% off">
+        <p class="deal-type">Food</p>
+        <h4>Subway</h4>
+        <p>20% off selected items</p>
+        <button class="btn btn-main small" type="button">View</button>
+      </div>
+    </div>
+
+    <p id="noDealsMsg" class="hint hidden">No deals match your search.</p>
+  </section>
+
+  <section id="verify" class="section">
+    <h3>How verification could work</h3>
+    <p class="hint">This is a basic “steps” layout (you can make it interactive later).</p>
+
+    <ol class="steps">
+      <li>Create account</li>
+      <li>Add university email</li>
+      <li>Unlock student discounts</li>
+    </ol>
+  </section>
+</main>
+<footer class="footer">
+  <p>UNiDAYS Next — coursework concept site</p>
+</footer>
+
+<script src="main.js"></script>
+<script src="canvas.js"></script>
+
+
+</body>
+</html>
